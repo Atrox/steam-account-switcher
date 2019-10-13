@@ -1,0 +1,16 @@
+{
+  "pkg": "icon",
+  "dest": "./icon/",
+  "fmt": true,
+  "output": "filebox.go",
+  "noprefix": true,
+  "custom": [
+    {
+      "files": [
+        "./icon/"
+      ],
+      "base": "icon/",
+      "prefix": ""
+    }
+  ]
+}
