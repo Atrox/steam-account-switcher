@@ -1,0 +1,23 @@
+name: push
+
+on: [push]
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: download deps
+        uses: docker://golang:latest
+        with:
+          entrypoint: go
+          args: mod download
+
+      - name: build
+        uses: docker://golang:latest
+        with:
+          entrypoint: go
+          args: build -v .
