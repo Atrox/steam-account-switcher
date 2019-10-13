@@ -1,11 +1,14 @@
 # Steam Account Switcher
+[<img src="https://raw.githubusercontent.com/Atrox/steam-account-switcher/master/icon/icon.ico" align="right" width="85">](https://github.com/atrox/steam-account-switcher/releases/latest)
 
 A simpler and better way to switch between your steam accounts.
 Everything works **without** touching your password.
 
+![taskbar image](taskbar.png?raw=true "Taskbar Image")
+
 ## Installation & Setup
 
-1. Download the application and extract it somewhere you like
+1. [Download the application](https://github.com/atrox/steam-account-switcher/releases/latest) and extract it somewhere you like
 2. Update the file `accounts.toml` with your steam usernames in the following format
     ```toml
    [accounts] 
@@ -13,6 +16,7 @@ Everything works **without** touching your password.
    anotherusername = ""
    lastuser = "this is the last user"
    ```
+3. Start the application and click on the icon in the taskbar whenever you want to switch accounts.
 
 ## Something does not work?
 
