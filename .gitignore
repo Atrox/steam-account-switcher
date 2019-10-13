@@ -2,6 +2,7 @@
 *.syso
 accounts.toml
 error.log
+dist/
 
 ### Go ###
 # Binaries for programs and plugins
