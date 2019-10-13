@@ -14,8 +14,14 @@ import (
 	"go.atrox.dev/steam-account-switcher/icon"
 )
 
-var executablePath string
-var applicationDir string
+var (
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
+
+	executablePath string
+	applicationDir string
+)
 
 func main() {
 	systray.Run(onReady, nil)
@@ -32,7 +38,7 @@ func onReady() {
 	systray.SetIcon(icon.FileIconIco)
 	systray.SetTooltip("steam account switcher")
 
-	titleItem := systray.AddMenuItem("steam account switcher", "created by atrox.dev")
+	titleItem := systray.AddMenuItem(fmt.Sprintf("steam account switcher %s", version), "created by atrox.dev")
 
 	systray.AddSeparator()
 

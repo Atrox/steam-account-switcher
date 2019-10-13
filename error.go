@@ -15,6 +15,6 @@ func logError(logErr error) {
 	}
 	defer file.Close()
 
-	_, _ = file.WriteString(fmt.Sprintf("[%s] %s\n", time.Now().Format("02.01.2006 15:04:05"), logErr.Error()))
+	_, _ = file.WriteString(fmt.Sprintf("[%s][%s-%s-%s] %s\n", time.Now().Format("02.01.2006 15:04:05"), version, commit, date, logErr.Error()))
 	log.Fatal(logErr)
 }
