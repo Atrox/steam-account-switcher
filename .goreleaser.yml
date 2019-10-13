@@ -3,9 +3,6 @@ project_name: steam-account-switcher
 before:
   hooks:
     - go mod download
-    - go install github.com/UnnoTed/fileb0x
-    - go install github.com/akavel/rsrc
-    - go generate ./...
     - cp accounts-sample.toml accounts.toml
 
 builds:
