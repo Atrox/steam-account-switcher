@@ -1,7 +1,7 @@
 package main
 
 //go:generate fileb0x filebox.json
-//go:generate rsrc -ico icon\icon.ico
+//go:generate rsrc -ico icon/icon.ico
 
 import (
 	"fmt"
