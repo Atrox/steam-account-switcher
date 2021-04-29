@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "12:00"
+    timezone: Etc/UTC
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: github.com/akavel/rsrc
+    versions:
+    - 0.10.1
+  - dependency-name: github.com/pelletier/go-toml
+    versions:
+    - 1.8.1
