@@ -8,6 +8,6 @@ require (
 	github.com/getlantern/golog v0.0.0-20190830074920-4ef2e798c2d7 // indirect
 	github.com/getlantern/systray v0.0.0-20190727060347-6f0e5a3c556c
 	github.com/pelletier/go-toml v1.5.0
-	golang.org/x/net v0.0.0-20191011234655-491137f69257
-	golang.org/x/sys v0.0.0-20191010194322-b09406accb47
+	golang.org/x/net v0.7.0
+	golang.org/x/sys v0.5.0
 )
